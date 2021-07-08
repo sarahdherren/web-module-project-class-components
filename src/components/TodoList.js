@@ -2,20 +2,25 @@
 // feel free to change this component.js into TodoList.js
 import React, { Component } from 'react'
 import Todo from './Todo';
+import DeleteIcon from '@material-ui/icons/Delete';
 
 export default class TodoList extends Component {
 
     render() {
         
         return (
-            <ul>
+            <div className='todoList' >
                {this.props.todos.map(todo => (
                    <Todo
                     key={todo.id}
-                    task={todo.task}
+                    task={todo}
+                    toggleHandler={this.props.toggleHandler}
                    />
                 ))} 
-            </ul>
+                <button onClick={this.props.removeHandler}>
+                    <p className='delete'>clear completed tasks</p>
+                </button>
+            </div>
         )
     }
 }

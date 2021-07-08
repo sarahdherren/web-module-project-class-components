@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #8ed2d4;
+    padding: 0;
+    background-image: url("https://www.transparenttextures.com/patterns/silver-scales.png");
+
+}
+
+header {
+    background-color: #69C3C6;
+    margin: auto;
+    padding: 16px 32px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    color: #fff;
+    font-family: 'McLaren', cursive;
+    font-weight: 200;
+}
+
+footer {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+
+footer p {
+    color: #747474;
+}
+
+form.todoForm {
+    display: flex;
+    margin-left: 50px;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 15px;
+    width: 50%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px #ccc;
+    
+}
+
+form.todoForm input {
+  width: 100%;
+  border: none;
+  padding: 1px;
+  outline: none;
+  font-size: 1.2em;
+  
+}
+
+form.todoForm button {
+    background: #69C3C6;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    margin-right: 10px;
+}
+
+div.todoList {
+    margin-left: 50px;
+    margin-top: 30px;
+    padding: 30px;
+    border-radius: 15px;
+    width: 50%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px #ccc; 
+}
+
+div.todo {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: hsl(0, 0%, 35%);
+}
+
+div.todoList button {
+    background: #fff;
+    border: none;
+    border-radius: 50%;
+    color: #69C3C6;
+    margin-right: 10px;
+}
+
+span.delete {
+   padding-left: 5px;
+   display: absolute;
+   top: -.5px;
+}
